@@ -24,7 +24,7 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } else {
-            $sql = "select destination, SUM(price) as total_sum, GROUP_CONCAT(name) as passengers
+            $sql = "select destination, SUM(price) as total_sum, GROUP_CONCAT(DISTINCT CONCAT(name,' ', surname)) as passengers
             FROM route INNER JOIN passenger ON route.passenger_code = passenger.passenger_code
             group by destination";
             $result = $conn->query($sql);
