@@ -1,13 +1,5 @@
 # airport
-This project is a preparation for the final exam at CEITI College. In a develope was used: Java, HTML, CSS, Spring (Boot, MVC, Data JPA), H2 database.
-
-Used Libraries:
-1) Spring Boot
-2) Spring MVC
-3) Spring Data JPA
-4) H2 Database
-5) FlyWay
-6) ModelMapper
+This project is a preparation for the final exam at CEITI College. In a develope was used: PHP, HTML, CSS, MariaDB database.
 
 ========================================================================================
 
