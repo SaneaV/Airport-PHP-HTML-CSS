@@ -36,11 +36,11 @@
                 echo "<tr><td>" . $row["passenger_code"] . "</td>
                 <td>" . $row["name"] .  " </td>
                 <td> " . $row["phone"] . " </td>
-                <td>" . $row["surname"] . "</td>";
+                <td>" . $row["surname"] . "</td></tr>";
             }
             echo "</table>";
         } else {
-            echo "Ошибка: " . $sql . "<br>" . $conn->error;
+            echo "Error: " . $sql . "<br>" . $conn->error;
         }
 
         $conn->close();

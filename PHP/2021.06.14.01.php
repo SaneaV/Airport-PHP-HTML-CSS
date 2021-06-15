@@ -37,7 +37,7 @@
                 <td>" . $row["class"] .  " </td>
                 <td> " . $row["destination"] . " </td>
                 <td>" . $row["price"] . "</td>
-                <td>" . $row["passenger_code"] . "</td>";
+                <td>" . $row["passenger_code"] . "</td></tr>";
             }
             echo "</table>";
         } else {

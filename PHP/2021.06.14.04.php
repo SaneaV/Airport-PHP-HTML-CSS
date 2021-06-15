@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/2021.06.14.01.css">
-    <title>Add Passenger PHP</title>
+    <title>Add Route PHP</title>
 </head>
 
 <body>
@@ -29,11 +29,6 @@
         $sql = "INSERT INTO route VALUES (NULL,'" . $class . "', '" . $destination . "', '" . $price . "', '" . $passengerCode . "')";
 
         if ($conn->query($sql) === TRUE) {
-            session_start();
-            $_SESSION['class'] = $class;
-            $_SESSION['destination'] = $destination;
-            $_SESSION['passenger_code'] = $passengerCode;
-
             echo "Route was succesfully added<br>";
             echo "<a href=\"../html/2021.06.14.01.html\"> <p>Back to home page</p></a>";
         } else {
