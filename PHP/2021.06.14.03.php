@@ -28,11 +28,6 @@
         $sql = "INSERT INTO passenger VALUES (NULL,'" . $name . "', '" . $phone . "', '" . $surname . "')";
 
         if ($conn->query($sql) === TRUE) {
-            session_start();
-            $_SESSION['name'] = $name;
-            $_SESSION['phone'] = $phone;
-            $_SESSION['surname'] = $surname;
-
             echo "Passenger was succesfully added<br>";
             echo "<a href=\"../html/2021.06.14.01.html\"> <p>Back to home page</p></a>";
         } else {
@@ -45,4 +40,5 @@
     </div>
 
 </body>
+
 </html>
